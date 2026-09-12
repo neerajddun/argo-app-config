@@ -18,10 +18,13 @@ spec:
           image: neeraj91/flask-app:latest
           ports:
             - containerPort: 5000
+          envFrom:
+            - configMapRef:
+                name: app-config
           resources:
             requests:
               memory: "128Mi"
               cpu: "250m"
             limits:
               memory: "256Mi"
-              cpu: "500m"
+              cpu: "500"
