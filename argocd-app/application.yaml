@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/neerajddun/argo-app-config.git
     targetRevision: HEAD
-    path: dev
+    path: .
 
   destination:
     server: https://kubernetes.default.svc
